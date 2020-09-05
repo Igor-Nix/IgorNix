@@ -4,10 +4,8 @@ body {
   overflow: hidden;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  z-index: -1;
+#bgimg{
+  position: fixed;
 }
 
 @font-face {
@@ -24,7 +22,7 @@ img {
   margin-left: 10px;
   margin: auto;
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 5%;
 }
 
@@ -35,7 +33,7 @@ h1 {
    font-family: 'GlacialIndifferenceRegular';
    font-weight: normal;
    font-style: normal;
-   font-size: 130px;
+   font-size: 3.8em;
 }
 
 h2 {
@@ -45,7 +43,7 @@ h2 {
   font-family: 'GlacialIndifferenceRegular';
   font-weight: normal;
   font-style: normal;
-  font-size: 100px;
+  font-size: 3.4em;
 }
 
 .bphrase {
@@ -63,7 +61,7 @@ h3 {
   font-family: 'GlacialIndifferenceRegular';
   font-weight: normal;
   font-style: normal;
-  font-size: 60px;
+  font-size: 2em;
 }
 
 h4 {
@@ -74,7 +72,7 @@ h4 {
   font-family: 'BukhariScript-Regular';
   font-weight: normal;
   font-style: normal;
-  font-size: 60px;
+  font-size: 2em;
 }
 
 h5 {
@@ -85,7 +83,7 @@ h5 {
   font-family: 'GlacialIndifferenceRegular';
   font-weight: normal;
   font-style: normal;
-  font-size: 60px;
+  font-size: 2em;
 }
 
 h6 {
@@ -96,7 +94,7 @@ h6 {
   font-family: 'BebasNeue-Regular';
   font-weight: normal;
   font-style: normal;
-  font-size: 60px;
+  font-size: 2em;
 }
 
 .smbtns {
@@ -129,4 +127,9 @@ h6 {
   position: absolute;
   top: 4%;
   left: 90%;
+}
+
+.smlinks img{
+  width: 4em;
+  height: 4em;
 }
