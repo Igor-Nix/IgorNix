@@ -1,11 +1,20 @@
 
 body {
-  margin: 0px;
+  margin: auto;
   overflow: hidden;
 }
 
 #bgimg{
   position: fixed;
+  z-index: -1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#mobilebg{
+  display: none;
 }
 
 .smlinks{
@@ -40,7 +49,7 @@ body {
   margin-left: 10px;
   margin: auto;
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 5%;
 }
 
@@ -117,17 +126,38 @@ h6 {
   font-size: 2em;
 }
 
-@media (max-width: 576px){
+@media only screen and (max-width: 600px){
+  #bgimg{
+    display: none;
+  }
 
+  #mobilebg{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    z-index: -1;
+
+  }
 
   .smlinks{
+    width: 100vw;
     justify-content: center;
     padding: 0;
     right: 0;
   }
 
+  .smlinks img{
+    width: 3.5em;
+    height: 3.5em;
+  }
+
+  .smlinks > .sm{
+    margin: 1em;
+  }
+
   .title > .txt{
-    margin: 10px;
+    margin: 20px;
   }
 
   .title{
@@ -135,21 +165,25 @@ h6 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 4em;
+    width: 100vw;
+    left: 0;
   }
 
+
   h1{
-    font-size: 4em;
+    font-size: 5em;
   }
 
   h2{
     font-size: 2em;
-    padding-left: 1em;
+    padding-left: 1.2em;
   }
 
   .bphrase{
+    width: 100vw;
     justify-content: center;
-    left: 10%;
+    font-size: 1em;
+    left: 0;
   }
 
 }
