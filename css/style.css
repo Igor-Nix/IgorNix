@@ -186,4 +186,10 @@ h6 {
     left: 0;
   }
 
+  .Aboutme{
+    background-color: #264653
+    width: 500px;
+    height: 100vw;
+
+  }
 }
