@@ -1,195 +1,358 @@
-
 body {
-  margin: auto;
-  overflow: hidden;
+  margin: 0;
 }
-
-#bgimg{
-  position: fixed;
-  z-index: -1;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+.top {
+  display: flex;
+  justify-content: center;
+  background-color: #98C1D9;
+  padding: 70px;
   background-size: cover;
 }
-
-#mobilebg{
-  display: none;
-}
-
-.smlinks{
-  position: relative;
+.lngs{
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  padding: 2em;
+  position: absolute;
+  justify-content: space-around;
+  width: 5vw;
+  margin-top: 3%;
+  margin-left: 3%;
 }
-
-.smlinks > .sm{
-  margin: 1em;
+#ita {
+  background-color: #3D5A80;
+  margin-right: 5%;
 }
-
-
-.smlinks img{
-  width: 4em;
-  height: 4em;
+#en{
+  background-color: #3D5A80;
 }
+button {
+  box-sizing: border-box;
+  border-radius: 20%;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+.saluto {
+  background-color: #98C1D9;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20%;
+}
+.smlinks {
+  background-color: #98C1D9;
+  display: flex;
+  justify-content: space-around;
+}
+.smimg {
+  display: flex;
+  max-width: 100%;
+  width: 4vw;
+}
+a {
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+ul {
+  color: black;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5vw;
+  list-style-type: circle;
+}
+li {
+  color: black;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1vw;
+}
+#enlng {
+  margin-bottom: 2%;
+}
+#mysql {
+  margin-bottom: 2%;
+}
+#sk3 {
+  margin-bottom: 2%;
+}
+#tl2 {
+  padding-bottom: 2%;
+}
+#lngslist {
+  padding-top: 2%;
+}
+#mid {
+  padding-bottom: 3%;
+}
+h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.3vw;
+}
+h2 {
+  color: black;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2vw;
+}
+h3 {
+  color: black;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5vw;
+}
+h7 {
+  color: black;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1vw;
+}
+h8 {
+  color: black;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5vw;
+  text-align: center;
+}
+p {
+  margin-left: 10%;
+  margin-right: 50%
+  color: black;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5vw;
+}
+.me {
+  align-self: center;
+  max-width: 20%;
+  border-radius: 50%;
+  flex: auto;
+  flex-grow: 3;
+}
+.mid {
+  background-color: #E0FBFC;
+  display: flex;
+  justify-content: center;
+}
+.aboutme {
+  background-color: #E0FBFC;
+}
+.infol {
+  margin-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.infor {
+  background-color: #98C1D9;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.ptitle {
+  display: flex;
+  justify-content: center;
+  background-color: #E0FBFC;
+}
+.work {
+  background-color: #E0FBFC;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+}
+.spath {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  height: auto;
+}
+.zod {
+  max-width: 100%;
 
+}
+.zodiak {
+  max-width: 100%;
+  width: 15vw;
+}
+.zodbtn {
+  max-width: 100%;
+}
+.spath:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.zod:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.contatti {
+  display: flex;
+  justify-content: center;
+  background-color: #98C1D9;
+}
 @font-face {
   font-family: BukhariScript-Regular;
   src: url(../fonts/BukhariScript-Regular.ttf);
 }
-
 @font-face {
   font-family: BebasNeue-Regular;
   src: url(../fonts/BebasNeue-Regular.ttf);
 }
-
-.title {
-  margin-left: 10px;
-  margin: auto;
-  position: absolute;
-  top: 20%;
-  left: 5%;
-}
-
-h1 {
-   margin-bottom: 5px;
-   margin: auto;
-   color: #ff1616;
-   font-family: 'GlacialIndifferenceRegular';
-   font-weight: normal;
-   font-style: normal;
-   font-size: 3.8em;
-}
-
-h2 {
-  margin: 0px;
-  margin: auto;
-  color: white;
-  font-family: 'GlacialIndifferenceRegular';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 3.4em;
-}
-
-.bphrase {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-  margin: auto;
-  position: absolute;
-  top: 70%;
-  left: 5%;
-}
-
-h3 {
-  margin: 0px;
-  margin: auto;
-  color: white;
-  font-family: 'GlacialIndifferenceRegular';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-}
-
-h4 {
-  margin: 0px;
-  margin: auto;
-  color: #ff1616;
-  text-align: center;
-  font-family: 'BukhariScript-Regular';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-}
-
-h5 {
-  margin: 0px;
-  margin: auto;
-  color: white;
-  text-align: center;
-  font-family: 'GlacialIndifferenceRegular';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-}
-
-h6 {
-  margin: 0px;
-  margin: auto;
-  color: #ff1616;
-  text-align: center;
-  font-family: 'BebasNeue-Regular';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-}
-
-@media only screen and (max-width: 600px){
-  #bgimg{
-    display: none;
-  }
-
-  #mobilebg{
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: fixed;
-    z-index: -1;
-
-  }
-
-  .smlinks{
-    width: 100vw;
-    justify-content: center;
-    padding: 0;
-    right: 0;
-  }
-
-  .smlinks img{
-    width: 3.5em;
-    height: 3.5em;
-  }
-
-  .smlinks > .sm{
-    margin: 1em;
-  }
-
-  .title > .txt{
-    margin: 20px;
-  }
-
-  .title{
+@media screen and (max-width: 480px) {
+  .top {
     display: flex;
     justify-content: center;
+    background-color: #98C1D9;
+    padding-top: 30px;
+    background-size: cover;
+  }
+  .me {
+    align-self: center;
+    max-width: 70%;
+    border-radius: 50%;
+    flex: auto;
+    flex-grow: 3;
+  }
+  .mid {
+  }
+  .lngs{
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 5vw;
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+  ul {
+    color: black;
+    font-family: 'GlacialIndifferenceRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 4vw;
+    text-align: center;
+    padding: 0;
+  }
+  li {
+    color: black;
+    font-family: 'GlacialIndifferenceRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3.5vw;
+  }
+  h1 {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    left: 0;
-  }
-
-
-  h1{
-    font-size: 5em;
-  }
-
-  h2{
-    font-size: 2em;
-    padding-left: 1.2em;
-  }
-
-  .bphrase{
-    width: 100vw;
     justify-content: center;
-    font-size: 1em;
-    left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: black;
+    font-family: 'GlacialIndifferenceRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 6vw;
+  }
+  h2 {
+    color: black;
+    font-family: 'GlacialIndifferenceRegular';
+    font-weight: normal;
+    font-style: normal;
+  }
+  #mid {
+    font-size: 5vw;
+  }
+  #projectstitle {
+    font-size: 5vw;
+  }
+  h3 {
+    color: black;
+    font-family: 'GlacialIndifferenceRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3.5vw;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  h4 {
+    color: black;
+    font-family: 'GlacialIndifferenceRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2vw;
+    text-align: center;
+  }
+  h8 {
+    color: black;
+    font-family: 'GlacialIndifferenceRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3.5vw;
+    text-align: center;
+  }
+  h7 {
+    color: black;
+    font-family: 'GlacialIndifferenceRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3.5vw;
+  }
+  .aboutme {
+    background-color: #E0FBFC;
+    display: flex;
+    flex-direction: column;
+  }
+  .infol {
+    margin-bottom: 50px;
+  }
+  .infor {
+    margin-bottom: 30px;
+  }
+  .work{
+    display: flex;
+    flex-direction: column;
+  }
+  .workinfo{
+    margin-left: 0px;
+    justify-content: center;
+  }
+  .zod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0px;
+  }
+  .zodbtn {
+    padding-top: 0px;
+  }
+  .zodiak {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15vw;
+  }
+  .spath {
+    max-width: 50%;
+    justify-content: center;
+    margin: 0;
   }
 
-  .Aboutme{
-    background-color: #264653
-    width: 500px;
-    height: 100vw;
-
+  .smlinks {
+    display: flex;
+    flex-direction: row;
+  }
+  .smimg {
+    margin: auto;
+    max-width: 100%;
   }
 }
